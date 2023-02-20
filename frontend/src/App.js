@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 
 import HomeScreen from "./screens/HomeScreen";
 import Cart from "./screens/Cart";
+import Terms from './screens/Terms'
 import { StoreContextProvider } from "./StoreContext";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                         <Routes>
                             <Route path="/" element={<HomeScreen products={products} />} />
                             <Route path="/cart" element={<Cart products={products}/>} />
+                            <Route path="/terms" element={<Terms products={products}/>} />
                         </Routes>
                     </Container>
                 </main>
